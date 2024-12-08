@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+    <style>
+        /* Reset and Basic Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav a {
+            color: #ff6600;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #f7f7f7;
+            color: #222;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero .button {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero .button:hover {
+            background-color: #e05500;
+        }
+
+        /* Main Content */
+        .container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px;
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product-card p {
+            font-size: 1rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 15px;
+            min-height: 50px;
+        }
+
+        .product-card a {
+            background-color: #ff6600;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card a:hover {
+            background-color: #e05500;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>About Fitness</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Step Into Style</h1>
+        <p>Discover the latest trends in footwear and elevate your style game.</p>
+        <a href="#" class="button">Shop Now</a>
+    </section>
+
+    <div class="container">
+        <div class="section">
+            <h2>Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="Images/Air jordan 1 mid lows.png" alt="Air Jordan 1">
+                    <p>Air Jordan 1 - Stylish and durable. Perfect for everyday wear.</p>
+                    <a href="#">Buy Now</a>
+                </div>
+                <div class="product-card">
+                    <img src="Images/Nike air jordan 1 men shoes.png" alt="Nike Runner">
+                    <p>Nike Runner - Lightweight and breathable for running enthusiasts.</p>
+                    <a href="#">Buy Now</a>
+                </div>
+                <div class="product-card">
+                    <img src="Images/Adidas-sneakers.png" alt="Adidas Sneakers">
+                    <p>Adidas Sneakers - Modern design meets ultimate comfort.</p>
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>                      
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Shoe Store. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
